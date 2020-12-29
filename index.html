@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather in App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <div class="container my-5">
+    <h1 class="text-center title">Weather App</h1>
+    <div class="card  my-3 shadow-lg back-card">
+      <div class="card-top text-center">
+        <div class="city-name my-3">
+          <p>Abuja</p>
+          <span>...</span>
+        </div>
+        <img src="./assets/img/night_image.svg" alt="" class="card-img-top time" />
+      </div>
+
+      <div class="card-body">
+        <div class="card-mid row">
+          <div class="col-8 text-center temp">
+            <span>30&deg;C</span>
+          </div>
+          <div class="col-4 condition-temp">
+            <p class="condition">Thunder Storm</p>
+            <p class="high">30&deg;C</p>
+            <p class="low">27&deg;C</p>
+          </div>
+        </div>
+
+        <div class="icon-container card shadow mx-auto">
+          <img src="./assets/img/cloud.svg" alt="" />
+        </div>
+        <div class="card-bottom px-5 py-4 row">
+          <div class="col text-center">
+            <p>30&deg;C</p>
+            <span>Feels Like</span>
+          </div>
+          <div class="col text-center">
+            <p>55%</p>
+            <span>Humidity</span>
+          </div>
+          <span class="text-center pt-5 mx-auto"><a href="./details.html">More details --></a></span>
+        </div>
+      </div>
+
+
+      <div class="days ">
+        <div class="row py-2">
+          <div class="col-7 pl-4">Today - Light Snow</div>
+          <div class="col-5">
+            <span>ICON 7 / -33&deg;C</span>
+          </div>
+        </div>
+        <div class="row py-2">
+          <div class="col-7 pl-4">Tomorrow - Light Rain</div>
+          <div class="col-5">
+            <span>ICON 7 / -33&deg;C</span>
+          </div>
+        </div>
+        <div class="row py-2">
+          <div class="col-7 pl-4">Wed - Overcast Clouds</div>
+          <div class="col-5">
+            <span>ICON 7 / -33&deg;C</span>
+          </div>
+        </div>
+        <div class="col-12 text-center p-3">7-day forecast</div>
+    </div>
+   <div class="hour">
+    <table class="table table-hover table-responsive">
+      <tbody>
+        <tr>
+          <th>11:30 AM</th>
+          <td>30&deg;C</td>
+          <td><img src="./assets/img/cloud.svg" alt="" width="50px"  height="30px"/></td>
+          <td>Heavy Rain</td>
+        </tr>
+        <tr>
+          <th>11:30 AM</th>
+          <td>30&deg;C</td>
+          <td><img src="./assets/img/cloud.svg" alt="" width="50px"  height="30px"/></td>
+          <td>Overcast Clouds</td>
+        </tr>
+        <tr>
+          <th>11:30 AM</th>
+          <td>30&deg;C</td>
+          <td><img src="./assets/img/cloud.svg" alt="" width="50px"  height="30px"/></td>
+          <td>Heavy Rain</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="col-12 text-center p-1">48-hour forecast</div>
+   </div>
+    </div>
+</div>
+  <!-- <script src="./assets/js/request.js"></script>
+    <script src="./assets/js/index.js"></script> -->
+</body>
+
+</html>

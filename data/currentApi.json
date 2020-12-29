@@ -1,0 +1,46 @@
+{
+  "coord": {
+    "lon": 74.8,
+    "lat": 34.07
+  },
+  "weather": [
+    {
+      "id": 500,
+      "main": "Rain",
+      "description": "light rain",
+      "icon": "10d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 277.29,
+    "feels_like": 274.5,
+    "temp_min": 277.29,
+    "temp_max": 277.29,
+    "pressure": 1020,
+    "humidity": 85,
+    "sea_level": 1020,
+    "grnd_level": 842
+  },
+  "visibility": 74,
+  "wind": {
+    "speed": 1.56,
+    "deg": 311
+  },
+  "rain": {
+    "1h": 0.42
+  },
+  "clouds": {
+    "all": 100
+  },
+  "dt": 1606120063,
+  "sys": {
+    "country": "IN",
+    "sunrise": 1606095676,
+    "sunset": 1606132416
+  },
+  "timezone": 19800,
+  "id": 1255634,
+  "name": "Srinagar",
+  "cod": 200
+}
