@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather in App</title>
+    <title>Weather Details - Aijaz Ahmad Wani</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -12,61 +12,37 @@
 
 <body>
     <div class="container my-5">
-        <h1 class="text-center title">Weather App</h1>
         <div class="card  my-3 shadow-lg back-card">
-            <div class="card-top text-center">
+            <div class="card-top text-center mb-5">
                 <div class="city-name my-3">
                     <p>Srinagar</p>
                     <span>...</span>
                 </div>
-                <img src="./assets/img/night_image.svg" alt="" class="card-img-top time" />
             </div>
-
-            <div class="card-bod p-2 ">
-                <div class="text-center name">
-                    <p>Details</p> 
-                  <span>...</span>  
-                </div>
+            <div class="hour">
+                <p class="text-center mt-5 mb-0">Details</p>
+                <a href="./index.html" class="btn btn-outline-secondary btn-sm m-1" role="button">Back</a>
                 <div class="outer">
                     <div class=" row ">
                         <div class="col-6 border-right border-bottom">
                             <div class="row">
                                 <div class="col-8 text-center">
-                                    <span class="detail-name">Humidity</span> 
+                                    <span class="detail-name">Humidity</span>
                                     <p class="detail"> 80%</p>
                                 </div>
-                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px" height="30px" /></div>
+                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px"
+                                        height="30px" /></div>
                             </div>
-    
+
                         </div>
                         <div class="col-6 border-bottom">
                             <div class="row">
                                 <div class="col-8 text-center">
-                                    <span class="detail-name">Pressure</span> 
+                                    <span class="detail-name">Pressure</span>
                                     <p class="detail"> 80%</p>
                                 </div>
-                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px" height="30px" /></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" row">
-                        <div class="col-6 border-right border-bottom">
-                            <div class="row">
-                                <div class="col-8 text-center">
-                                    <span class="detail-name">Wind </span> 
-                                    <p class="detail"> 80%</p>
-                                </div>
-                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px" height="30px" /></div>
-                             </div>
-    
-                        </div>
-                        <div class="col-6 border-bottom">
-                            <div class="row">
-                                <div class="col-8 text-center">
-                                    <span class="detail-name">Wind Direction</span> 
-                                    <p class="detail"> 80%</p>
-                                </div>
-                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px" height="30px" /></div>
+                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px"
+                                        height="30px" /></div>
                             </div>
                         </div>
                     </div>
@@ -74,20 +50,45 @@
                         <div class="col-6 border-right border-bottom">
                             <div class="row">
                                 <div class="col-8 text-center">
-                                    <span class="detail-name">Visibility</span> 
+                                    <span class="detail-name">Wind </span>
                                     <p class="detail"> 80%</p>
                                 </div>
-                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px" height="30px" /></div>
-                             </div>
-    
+                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px"
+                                        height="30px" /></div>
+                            </div>
+
                         </div>
                         <div class="col-6 border-bottom">
                             <div class="row">
                                 <div class="col-8 text-center">
-                                    <span class="detail-name">Clouds</span> 
+                                    <span class="detail-name">Wind Direction</span>
                                     <p class="detail"> 80%</p>
                                 </div>
-                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px" height="30px" /></div>
+                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px"
+                                        height="30px" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <div class="col-6 border-right border-bottom">
+                            <div class="row">
+                                <div class="col-8 text-center">
+                                    <span class="detail-name">Visibility</span>
+                                    <p class="detail"> 80%</p>
+                                </div>
+                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px"
+                                        height="30px" /></div>
+                            </div>
+
+                        </div>
+                        <div class="col-6 border-bottom">
+                            <div class="row">
+                                <div class="col-8 text-center">
+                                    <span class="detail-name">Clouds</span>
+                                    <p class="detail"> 80%</p>
+                                </div>
+                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px"
+                                        height="30px" /></div>
                             </div>
                         </div>
                     </div>
@@ -95,12 +96,13 @@
                         <div class="col-6 border-right">
                             <div class="row">
                                 <div class="col-8 text-center">
-                                    <span class="detail-name">Sea level</span> 
+                                    <span class="detail-name">Sea level</span>
                                     <p class="detail"> 80%</p>
                                 </div>
-                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px" height="30px" /></div>
-                             </div>
-    
+                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px"
+                                        height="30px" /></div>
+                            </div>
+
                         </div>
                         <div class="col-6">
                             <div class="row">
@@ -108,12 +110,17 @@
                                     <span class="detail-name">Ground</span>
                                     <p class="detail"> 80%</p>
                                 </div>
-                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px" height="30px" /></div>
+                                <div class="col-4"><img src="./assets/img/cloud.svg" alt="" width="30px"
+                                        height="30px" /></div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <p class="text-center">Developed with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="#ea3838" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg> by <a href="https://aijazahmadwani.netlify.app">Aijaz Wani</a></p>
             </div>
         </div>
     </div>

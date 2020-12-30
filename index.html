@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weather in App</title>
+  <title>Weather App - Aijaz Ahmad Wani</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -12,7 +12,6 @@
 
 <body>
   <div class="container my-5">
-    <h1 class="text-center title">Weather App</h1>
     <div class="card  my-3 shadow-lg back-card">
       <div class="card-top text-center">
         <div class="city-name my-3">
@@ -25,28 +24,28 @@
       <div class="card-body">
         <div class="card-mid row">
           <div class="col-8 text-center temp">
-            <span>30&deg;C</span>
+            <span>3&deg;C</span>
           </div>
           <div class="col-4 condition-temp">
             <p class="condition">Thunder Storm</p>
-            <p class="high">30&deg;C</p>
-            <p class="low">27&deg;C</p>
+            <p class="high"><img src="./assets/img/up.svg"> 30&deg;C</p>
+            <p class="low"><img src="./assets/img/down.svg"> 27&deg;C</p>
           </div>
         </div>
 
         <div class="icon-container card shadow mx-auto">
-          <img src="./assets/img/cloud.svg" alt="" />
+          <img src="./assets/animated_icons/01d.svg" alt=""  width="90%"/>
         </div>
         <div class="card-bottom px-5 py-4 row">
           <div class="col text-center">
-            <p>30&deg;C</p>
+            <p>-2&deg;C</p>
             <span>Feels Like</span>
           </div>
           <div class="col text-center">
             <p>55%</p>
             <span>Humidity</span>
           </div>
-          <span class="text-center pt-5 mx-auto"><a href="./details.html">More details --></a></span>
+          <span class="text-center pt-5 mx-auto"><a href="./details.html">More details <img src="./assets/img/arrow-right.svg" width="20px" ></a></span>
         </div>
       </div>
 
@@ -70,7 +69,7 @@
             <span>ICON 7 / -33&deg;C</span>
           </div>
         </div>
-        <div class="col-12 text-center p-3">7-day forecast</div>
+        <div class="col-12 text-center p-3"><a href="./days.html">7-day forecast</a></div>
     </div>
    <div class="hour">
     <table class="table table-hover table-responsive">
@@ -95,8 +94,11 @@
         </tr>
       </tbody>
     </table>
-    <div class="col-12 text-center p-1">48-hour forecast</div>
+    <div class="col-12 text-center p-1"><a href="./hours.html">48-hour forecast</a></div>
    </div>
+   <p class="text-center">Developed with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ea3838" class="bi bi-heart-fill" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+  </svg> by <a href="https://aijazahmadwani.netlify.app">Aijaz Wani</a></p>
     </div>
 </div>
   <!-- <script src="./assets/js/request.js"></script>
