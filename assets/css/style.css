@@ -59,7 +59,7 @@ body {
 }
 .high::before {
   content: '';
-  background: url('img/up.svg') no-repeat;
+  background: url('../img/up.svg') no-repeat;
   width: 10px;
   height: 15px;
   display: inline-block;
@@ -69,7 +69,7 @@ body {
 
 .low::before {
   content: '';
-  background: url('img/down.svg') no-repeat;
+  background: url('../img/down.svg') no-repeat;
   width: 10px;
   height: 15px;
   display: inline-block;
@@ -131,3 +131,9 @@ a:hover {
   top: -60px;
 }
 
+.small-icon-container {
+  border-radius: 100%;
+  width: 20%;
+
+  background: #202020;
+}

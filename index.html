@@ -29,7 +29,7 @@
 
 <body>
   <div class="container my-5">
-    <div class="card  my-3 shadow-lg back-card">
+    <div class="card  my-3 shadow-lg back-card d-none">
       <div class="card-top text-center">
         <div class="city-name my-3">
           <p>Abuja</p>
@@ -45,8 +45,8 @@
           </div>
           <div class="col-4 condition-temp">
             <p class="condition">Thunder Storm</p>
-            <p class="high"><img src="./assets/img/up.svg"> 30&deg;C</p>
-            <p class="low"><img src="./assets/img/down.svg"> 27&deg;C</p>
+            <p class="high"> 30&deg;C</p>
+            <p class="low"> 27&deg;C</p>
           </div>
         </div>
 
@@ -91,25 +91,8 @@
       </div>
       <div class="hour">
         <table class="table table-hover table-responsive">
-          <tbody>
-            <tr>
-              <th>11:30 AM</th>
-              <td>30&deg;C</td>
-              <td><img src="./assets/img/cloud.svg" alt="" width="50px" height="30px" /></td>
-              <td>Heavy Rain</td>
-            </tr>
-            <tr>
-              <th>11:30 AM</th>
-              <td>30&deg;C</td>
-              <td><img src="./assets/img/cloud.svg" alt="" width="50px" height="30px" /></td>
-              <td>Overcast Clouds</td>
-            </tr>
-            <tr>
-              <th>11:30 AM</th>
-              <td>30&deg;C</td>
-              <td><img src="./assets/img/cloud.svg" alt="" width="50px" height="30px" /></td>
-              <td>Heavy Rain</td>
-            </tr>
+          <tbody class="hours">
+
           </tbody>
         </table>
         <div class="col-12 text-center p-1"><a href="./hours.html">48-hour forecast</a></div>
@@ -120,8 +103,8 @@
         </svg> by <a href="https://aijazahmadwani.netlify.app">Aijaz Wani</a></p>
     </div>
   </div>
-  <!-- <script src="./assets/js/request.js"></script>
-    <script src="./assets/js/index.js"></script> -->
+  <script src="./assets/js/request.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

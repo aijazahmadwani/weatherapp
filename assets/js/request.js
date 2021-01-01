@@ -23,6 +23,7 @@ function setPosition(position) {
         .then((data) => {
             //console.log(data);
             updateCurrent(data);
+            localStorage.setItem("currentData",JSON.stringify(data));  
         })
         .then(() => {
             fetch('data/detailApi.json')
@@ -30,8 +31,8 @@ function setPosition(position) {
                     return response.json();
                 })
                 .then((data) => {
-                    //console.log(data);
-                    //updateDetail();
+                    localStorage.setItem("detailData",JSON.stringify(data));       
+                    updateHomepageForecast();
                 })
         })
         .catch((error) => {
