@@ -70,33 +70,23 @@ function updateCurrent(data) {
 
 function updateHomepageForecast() {
   data = JSON.parse(localStorage.getItem("detailData"));
-  days.innerHTML = `
-  <div class="row py-2">
-  <div class="col-7 pl-4 pr-0"><span style="font-size:12px;">${convertTimestamp(data.daily[0].dt)}</span> &nbsp;&nbsp;${capitalizeFirstLetter(data.daily[0].weather[0].description)}</div>
-  <div class="col-5">
-    <span><img src="./assets/animated_icons/${data.daily[0].weather[0].icon}.svg" width="50%" class="img-fluid small-icon-container" alt="..."> ${spitOutCelcius(data.daily[0].temp.day)} / ${spitOutCelcius(data.daily[0].temp.night)}&deg;C</span>
-  </div>
-</div>
-<div class="row py-2">
-  <div class="col-7 pl-4 pr-0"><span style="font-size:12px;">${convertTimestamp(data.daily[1].dt)}</span> &nbsp;&nbsp;${capitalizeFirstLetter(data.daily[1].weather[0].description)}</div>
-  <div class="col-5">
-    <span><img src="./assets/animated_icons/${data.daily[1].weather[0].icon}.svg" width="30%" class="img-fluid small-icon-container" alt="..."> ${spitOutCelcius(data.daily[1].temp.day)} / ${spitOutCelcius(data.daily[1].temp.night)}&deg;C</span>
-  </div>
-</div>
-<div class="row py-2">
-  <div class="col-7 pl-4 pr-0"><span style="font-size:12px;">${convertTimestamp(data.daily[2].dt)}</span> &nbsp;&nbsp;${capitalizeFirstLetter(data.daily[2].weather[0].description)}</div>
-  <div class="col-5">
-    <span><img src="./assets/animated_icons/${data.daily[2].weather[0].icon}.svg" width="30%" class="img-fluid small-icon-container" alt="..."> ${spitOutCelcius(data.daily[2].temp.day)} / ${spitOutCelcius(data.daily[2].temp.night)}&deg;C</span>
-  </div>
-</div>
-<div class="col-12 text-center p-3"><a href="./days.html">7-day forecast</a></div>
+  for(let i=0;i<3;i++){
+  days.innerHTML += `
+  <tr>
+  <th style="font-size:12px;">${convertTimestamp(data.daily[i].dt)}</th>
+  <td>${capitalizeFirstLetter(data.daily[i].weather[0].description)}</td>
+  <td><img src="./assets/animated_icons/${data.daily[i].weather[0].icon}.svg" alt="" width="100px" height="60px" class="table-icon-container"/></td>
+  <td> ${spitOutCelcius(data.daily[i].temp.day)}/${spitOutCelcius(data.daily[0].temp.night)}&deg;C</td>
+  </tr>
   `
+  }
+
   for(let i=0;i<3;i++){
     hours.innerHTML += `
     <tr>
-    <th style="font-size:14px;">${convertTimestamp(data.hourly[i].dt)}</th>
+    <th style="font-size:12px;">${convertTimestamp(data.hourly[i].dt)}</th>
     <td>${spitOutCelcius(data.hourly[i].temp)}&deg;C</td>
-    <td><img src="./assets/animated_icons/${data.hourly[i].weather[0].icon}.svg" alt="" width="50px" height="30px"/></td>
+    <td><img src="./assets/animated_icons/${data.hourly[i].weather[0].icon}.svg" alt="" width="100px" height="60px" class="table-icon-container"/></td>
     <td>${capitalizeFirstLetter(data.hourly[i].weather[0].description)}</td>
     </tr>
     

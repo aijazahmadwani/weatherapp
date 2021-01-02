@@ -130,10 +130,15 @@ a:hover {
   position: relative;
   top: -60px;
 }
-
+/* 
 .small-icon-container {
   border-radius: 100%;
   width: 20%;
-
+  background: #202020;
+} */
+.table-icon-container {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
   background: #202020;
 }
