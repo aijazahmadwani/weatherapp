@@ -1,7 +1,7 @@
 // API KEY
 const key = '4e027d2fcccd807da22c4507d2dafed5';
 let currentApi;
-
+const notificationElement=document.querySelector('.notification');
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition(setPosition, showError);
