@@ -16,17 +16,16 @@ function setPosition(position) {
     let lon = position.coords.longitude;
     currentApi = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
     detailApi = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely&appid=${key}`;
-    fetch('data/currentApi.json')
+    fetch(currentApi)
         .then((response) => {
             return response.json();
         })
         .then((data) => {
-            //console.log(data);
             updateCurrent(data);
             localStorage.setItem("currentData",JSON.stringify(data));  
         })
         .then(() => {
-            fetch('data/detailApi.json')
+            fetch(detailApi)
                 .then((response) => {
                     return response.json();
                 })
