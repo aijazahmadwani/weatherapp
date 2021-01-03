@@ -26,7 +26,7 @@ function updateCurrent(data) {
           </div>
 
           <div class="icon-container card shadow mx-auto">
-            <img src="${iconSrc}" alt="" width="90px" />
+            <img src="${iconSrc}" alt="${data.weather[0].description}" width="90px" />
           </div>
           <div class="card-bottom px-5 py-4 row">
             <div class="col text-center">
@@ -38,7 +38,7 @@ function updateCurrent(data) {
               <span>Humidity</span>
             </div>
             <span class="text-center pt-5 mx-auto"><a href="./details.html">More details <img
-            src="./assets/img/arrow-right.svg" width="20px"></a></span>
+            src="./assets/img/arrow-right.svg" alt="arrow-right" width="20px"></a></span>
           </div>
     `;
   if (isDayTime(imageName)) {
@@ -71,7 +71,7 @@ function updateHomepageForecast() {
   <tr>
   <th style="font-size:12px;">${convertTimestamp(data.daily[i].dt)}</th>
   <td>${capitalizeFirstLetter(data.daily[i].weather[0].description)}</td>
-  <td><img src="./assets/animated_icons/${data.daily[i].weather[0].icon}.svg" alt="" width="100px" height="60px" class="table-icon-container"/></td>
+  <td><img src="./assets/animated_icons/${data.daily[i].weather[0].icon}.svg" alt="${capitalizeFirstLetter(data.daily[i].weather[0].description)}" width="100px" height="60px" class="table-icon-container"/></td>
   <td> ${spitOutCelcius(data.daily[i].temp.day)}/${spitOutCelcius(data.daily[0].temp.night)}&deg;C</td>
   </tr>
   `
@@ -82,7 +82,7 @@ function updateHomepageForecast() {
     <tr>
     <th style="font-size:12px;">${convertTimestamp(data.hourly[i].dt,'time')}</th>
     <td>${spitOutCelcius(data.hourly[i].temp)}&deg;C</td>
-    <td><img src="./assets/animated_icons/${data.hourly[i].weather[0].icon}.svg" alt="" width="100px" height="60px" class="table-icon-container"/></td>
+    <td><img src="./assets/animated_icons/${data.hourly[i].weather[0].icon}.svg" alt="${capitalizeFirstLetter(data.hourly[i].weather[0].description)}" width="100px" height="60px" class="table-icon-container"/></td>
     <td>${capitalizeFirstLetter(data.hourly[i].weather[0].description)}</td>
     </tr>
     

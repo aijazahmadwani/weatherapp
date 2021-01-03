@@ -5,7 +5,7 @@ days.innerHTML += `
 <tr>
 <th style="font-size:12px;">${convertTimestamp(data.daily[i].dt)}</th>
 <td>${capitalizeFirstLetter(data.daily[i].weather[0].description)}</td>
-<td><img src="./assets/animated_icons/${data.daily[i].weather[0].icon}.svg" alt="" width="100px" height="60px" class="table-icon-container"/></td>
+<td><img src="./assets/animated_icons/${data.daily[i].weather[0].icon}.svg" alt="${capitalizeFirstLetter(data.daily[i].weather[0].description)}" width="100px" height="60px" class="table-icon-container"/></td>
 <td> ${spitOutCelcius(data.daily[i].temp.day)}/${spitOutCelcius(data.daily[0].temp.night)}&deg;C</td>
 </tr>
 `
