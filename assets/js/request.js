@@ -25,7 +25,6 @@ if (navigator.onLine) {
             })
             .then((data) => {
                 updateCurrent(data);
-                console.log(data);
                 localStorage.setItem("currentData", JSON.stringify(data));
             })
             .then(() => {

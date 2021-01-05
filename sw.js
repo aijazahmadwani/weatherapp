@@ -29,7 +29,7 @@ workbox.routing.registerRoute(
   })
 )
 workbox.routing.registerRoute(
-  "/details.html","/days.html","/hours.html",
+'/details.html','/days.html','/hours.html',
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: 'htmlpages',
     plugins: [
