@@ -1,7 +1,7 @@
 {
     "start_url": "/",
     "name": "Weather App - Aijaz",
-    "short_name": "Aijaz Wani",
+    "short_name": "Weather App - Aijaz",
     "description": "Weather App by Aijaz Ahmad Wani, developer from Srinagar, Jammu & Kashmir.",
     "display": "standalone",
     "scope": "/",
