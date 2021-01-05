@@ -54,6 +54,7 @@
 
 <body>
   <div class="container my-5">
+    <div class="offline-page"></div>
     <div class="notification"></div>
     <div class="card  my-3 shadow-lg back-card d-none">
       <div class="card-top text-center">
@@ -113,6 +114,16 @@
         </svg> by <a href="https://aijazahmadwani.netlify.app">Aijaz Wani</a></p>
     </div>
   </div>
+  <script>if (navigator.onLine) {
+  }
+  else{
+    const offline = document.querySelector('.offline-page');
+    offline.innerHTML += `<div class="alert alert-danger" role="alert">
+      You are viewing an offline copy of this page.<br>
+      Please, check your internet connection & try again!
+    </div>`
+  }
+  </script>
   <script src="./assets/js/utility.js"> </script>
   <script src="./assets/js/index.js"></script>
   <script src="./assets/js/request.js"></script>
