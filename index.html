@@ -19,6 +19,22 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <meta name="description"
   content="Weather App by Aijaz Ahmad Wani. Provides detailed current weather information and 7-day and 48 hours forecast for any location.">
+  	<!-- pwa -->
+	<link rel="manifest" href="manifest.json">
+	<script>
+		// Check that service workers are supported
+		if ('serviceWorker' in navigator) {
+			// Use the window load event to keep the page load performant
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('sw.js').then(swReg => {
+					console.log('Worker registered');
+				}).catch(error => {
+					console.log("There was an error");
+				});
+			});
+		}
+	</script>
+  
   <!-- favicons -->
   <meta name="robots" content="index, follow">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
@@ -33,20 +49,7 @@
   <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
   <meta name="msapplication-TileImage" content="assets/favicons/mstile-150x150.png">
 
-  <link rel="manifest" href="./manifest.json">
-	<script>
-		// Check that service workers are supported
-		if ('serviceWorker' in navigator) {
-			// Use the window load event to keep the page load performant
-			window.addEventListener('load', () => {
-				navigator.serviceWorker.register('./sw.js').then(swReg => {
-					console.log('Worker registered');
-				}).catch(error => {
-					console.log("There was an error");
-				});
-			});
-		}
-	</script>
+ 
 </head>
 
 <body>
