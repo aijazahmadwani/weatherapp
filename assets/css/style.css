@@ -159,4 +159,6 @@ font-weight: 600;
 .currentTime{
   font-size: 12px;
 }
-
+.add-button {
+justify-content: center;
+}

@@ -28,3 +28,16 @@ workbox.routing.registerRoute(
     ]
   })
 )
+workbox.routing.registerRoute(
+  "/details.html","/days.html","/hours.html",
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'htmlpages',
+    plugins: [
+      new workbox.expiration.ExpirationPlugin({
+        purgeOnQuotaError: true,
+        maxEntries: 100
+
+      })
+    ]
+  })
+)
