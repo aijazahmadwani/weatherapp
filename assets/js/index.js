@@ -12,10 +12,11 @@ const isDayTime = (icon) => {
 function updateCurrent(data) {
   const imageName = data.weather[0].icon;
   const iconSrc = ` ./assets/animated_icons/${imageName}.svg`;
-  cityName.textContent = data.name;
+  cityName.textContent = data.name +','+ data.sys.country;
   cardBody.innerHTML = `
     <div class="card-mid row">
             <div class="col-8 text-center temp">
+            <p class="text-left currentTime">as of ${convertTimestamp(data.dt,'time')}</p>
               <span>${spitOutCelcius(data.main.temp)}&deg;C</span>
             </div>
             <div class="col-4 condition-temp">
