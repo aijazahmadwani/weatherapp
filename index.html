@@ -18,23 +18,24 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <meta name="description"
-  content="Weather App by Aijaz Ahmad Wani. Provides detailed current weather information and 7-day and 48 hours forecast for any location.">
-  	<!-- pwa -->
-	<link rel="manifest" href="manifest.json">
-	<script>
-		// Check that service workers are supported
-		if ('serviceWorker' in navigator) {
-			// Use the window load event to keep the page load performant
-			window.addEventListener('load', () => {
-				navigator.serviceWorker.register('sw.js').then(swReg => {
-					console.log('Worker registered');
-				}).catch(error => {
-					console.log("There was an error");
-				});
-			});
-		}
-	</script>
-  
+    content="Weather App by Aijaz Ahmad Wani. Provides detailed current weather information and 7-day and 48 hours forecast for any location.">
+  <meta name="author" content="Aijaz Ahmad Wani">
+  <!-- pwa -->
+  <link rel="manifest" href="manifest.json">
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').then(swReg => {
+          console.log('Worker registered');
+        }).catch(error => {
+          console.log("There was an error");
+        });
+      });
+    }
+  </script>
+
   <!-- favicons -->
   <meta name="robots" content="index, follow">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
@@ -48,15 +49,25 @@
   <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
   <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
   <meta name="msapplication-TileImage" content="assets/favicons/mstile-150x150.png">
-  
+
   <!-- open graph tags -->
+  <!-- Facebook Meta Tags -->
   <meta property="og:title" content="Weather App">
-<meta property="og:site_name" content="Weather App - Aijaz Ahmad Wani">
-<meta property="og:url" content="https://weather-aijaz.netlify.app/">
-<meta property="og:description" content="Weather App - Shows detailed current weather along with 7 day and 48 hours forecast. Developed by Aijaz Wani ">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://weather-aijaz.netlify.app/assets/img/work-2.png">
- 
+  <meta property="og:site_name" content="Weather App - Aijaz Ahmad Wani">
+  <meta property="og:url" content="https://weather-aijaz.netlify.app/">
+  <meta property="og:description"
+    content="Weather App - Shows detailed current weather along with 7 day and 48 hours forecast. Developed by Aijaz Wani ">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://weather-aijaz.netlify.app/assets/img/work-2.png">
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:domain" content="weather-aijaz.netlify.app">
+  <meta property="twitter:url" content="https://weather-aijaz.netlify.app/">
+  <meta name="twitter:title" content="Weather App">
+  <meta name="twitter:description"
+    content="Weather App - Shows detailed current weather along with 7 day and 48 hours forecast. Developed by Aijaz Wani ">
+  <meta name="twitter:image" content="https://weather-aijaz.netlify.app/assets/img/work-2.png">
+
 </head>
 
 <body>
@@ -123,22 +134,22 @@
     </div>
   </div>
   <script>if (navigator.onLine) {
-  }
-  else{
-    const offline = document.querySelector('.offline-page');
-    offline.innerHTML += `<div class="alert alert-danger" role="alert">
+    }
+    else {
+      const offline = document.querySelector('.offline-page');
+      offline.innerHTML += `<div class="alert alert-danger" role="alert">
       You are viewing an offline copy of this page.<br>
       Please, check your internet connection & try again!
     </div>`
-  }
+    }
   </script>
   <script src="./assets/js/utility.js"> </script>
   <script src="./assets/js/index.js"></script>
   <script src="./assets/js/request.js"></script>
-  
-  
-  
- 
+
+
+
+
 </body>
 
 </html>
